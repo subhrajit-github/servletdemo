@@ -1,13 +1,19 @@
 package servletdemo.demo;
 
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/register")
+//@WebServlet("/register")
+@SuppressWarnings("serial")
 public class Register extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse res) {
-    	System.out.println("class triggered");
+    	
+    	String id=req.getParameter("id"); 
+    	String name=req.getParameter("name"); 
+    	String age=req.getParameter("age"); 
+    	
+    	System.out.println(id+" "+name+" "+age);
+    	System.out.println("Welcome to servlet");
     }
 }
