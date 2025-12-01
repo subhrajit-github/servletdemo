@@ -2,6 +2,7 @@ package servletdemo.demo;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Service {
@@ -25,6 +26,7 @@ private static Connection con;
   }
   public void save() {
 	  
+		
   }
   public void update() {
 	  
