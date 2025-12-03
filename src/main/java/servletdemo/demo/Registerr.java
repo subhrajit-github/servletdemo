@@ -17,7 +17,8 @@ public class Registerr extends HttpServlet {
     	  req.getParameter("name");
     	  req.getParameter("age");
     	  
-    	  
+    	  req.setAttribute("msg", "INVALID");
+    	 
     	 
     	  //db logic
     	  boolean flag=true;//assume data is saved
@@ -27,8 +28,10 @@ public class Registerr extends HttpServlet {
     		 dispatcher.forward(req, res);
     	  }
     	  else {
-    		  System.out.println("data not saved");
-    		  res.getWriter().print("<h1>DATA NOT SAVED</h1");
+    		  res.getWriter().print("<h1>DATA NOT SAVED</h1>");
+    		 RequestDispatcher dispatcher= req.getRequestDispatcher("index.jsp");
+    		 dispatcher.include(req, res);
+    		  
     	  }
        }
 }
