@@ -16,8 +16,8 @@
 			login to your account
 		</h1>
 		USERNAME:<input type="text" name="username"><br>
-		PASSWORD:<input type="text" name="password"><br> <input
-			type="submit" value="LogIn"><br>
+		PASSWORD:<input type="text" name="password"><br>
+		 <input type="submit" value="LogIn"><br>
 	</form>
 </body>
 </body>

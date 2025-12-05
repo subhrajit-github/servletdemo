@@ -6,11 +6,23 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
 	<display-name>Archetype Created Web Application</display-name>
-	<servlet><servlet-name>register</servlet-name>
-	<servlet-class>/servletdemo/src/main/java/servletdemo/demo/Register.java</servlet-class>
+	<servlet><servlet-name>login</servlet-name>
+	<servlet-class>servletdemo.demo.Login</servlet-class>
+	<init-param>
+	<param-name>companyname</param-name>
+	<param-value>INFOSYS</param-value>
+	</init-param>
+	<init-param>
+	<param-name>devname</param-name>
+	<param-value>Subhra</param-value>
+	</init-param>
+	<init-param>
+	<param-name>pi]</param-name>
+	<param-value>3.142</param-value>
+	</init-param>
 	</servlet>
 	<servlet-mapping>
-	<servlet-name>register</servlet-name>
-	<url-pattern>/register</url-pattern>
+	<servlet-name>login</servlet-name>
+	<url-pattern>/login</url-pattern>
 	</servlet-mapping>
 </web-app>
