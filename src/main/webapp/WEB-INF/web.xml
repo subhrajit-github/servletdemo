@@ -17,7 +17,7 @@
 	<param-value>Subhra</param-value>
 	</init-param>
 	<init-param>
-	<param-name>pi]</param-name>
+	<param-name>pi</param-name>
 	<param-value>3.142</param-value>
 	</init-param>
 	</servlet>

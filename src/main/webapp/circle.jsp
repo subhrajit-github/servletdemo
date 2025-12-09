@@ -7,7 +7,7 @@
 <body>
 	<form action="submit">
 	RADIUS:<input type="text" name="">
-  <button type=" " name="calculate">CALCULATE</button>
+  <input type="submit" value="calculate">
 	</form>
 </body>
 </html>
